@@ -1,4 +1,5 @@
  import { isAnagram, stringSplit, isAnagramWithSplit } from "./isAnagram";
+ import { findMax } from './maxminNumber'
 
  describe('coding problem tests', () => {
 
@@ -21,6 +22,12 @@
     expect(isAnagramWithSplit('Motherin Law', 'Hitler Woman')).toBeTruthy();
 
   });
+
+  test('whether find max works', () => {
+    expect(findMax([32, 5,4,2 ])).toBe(32);
+    expect(findMax([])).toStrictEqual([]);
+    expect(findMax(null)).toStrictEqual([]);
+  })
 
 
  })

@@ -1,6 +1,8 @@
+import { bubbleSort } from "./sort";
+
 export const findMax = list => {
     if(!Array.isArray(list) || list.length < 1 ) return []
-    return list.sort((x, y) => x - y)[list.length-1];
+    return bubbleSort(list)[list.length-1];
 }
 
 export const findMaxMin = list => {

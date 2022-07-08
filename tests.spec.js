@@ -1,5 +1,6 @@
  import { isAnagram, stringSplit, isAnagramWithSplit } from "./isAnagram";
  import { findMax } from './maxminNumber'
+ import { bubbleSort } from './sort'
 
  describe('coding problem tests', () => {
 
@@ -29,5 +30,10 @@
     expect(findMax(null)).toStrictEqual([]);
   })
 
+  test('whether sort works as expected', () => {
+    expect(bubbleSort([32, 5,4,2])).toStrictEqual([2,4,5,32]);
+    expect(bubbleSort([])).toStrictEqual([]);
+    expect(bubbleSort(null)).toStrictEqual([]);
+  })
 
  })

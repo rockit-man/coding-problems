@@ -1,6 +1,8 @@
+import { bubbleSort } from "./sort"
+
 export const isAnagram = (str1 , str2) => {
-    return str1.toLowerCase().split('').sort().join('') === 
-           str2.toLowerCase().split('').sort().join('')      
+    return bubbleSort(str1.toLowerCase().split('')).join('') ===
+    bubbleSort(str2.toLowerCase().split('')).join('');
 }
 
 export const stringSplit = (str, arr = []) => {
@@ -13,7 +15,6 @@ export const stringSplit = (str, arr = []) => {
 
 export const isAnagramWithSplit = (str1, str2) => {
 
-
-    return stringSplit(str1.toLowerCase()).sort().join('') === 
-           stringSplit(str2.toLowerCase()).sort().join('')
+    return bubbleSort(stringSplit(str1.toLowerCase())).join('') === 
+           bubbleSort(stringSplit(str2.toLowerCase())).join('')
 }

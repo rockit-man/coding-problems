@@ -1,6 +1,7 @@
  import { isAnagram, stringSplit, isAnagramWithSplit } from "./isAnagram";
  import { findMax } from './maxminNumber'
  import { bubbleSort } from './sort'
+ import { factorial } from './recursion'
 
  describe('coding problem tests', () => {
 
@@ -35,5 +36,21 @@
     expect(bubbleSort([])).toStrictEqual([]);
     expect(bubbleSort(null)).toStrictEqual([]);
   })
+
+   test('whether factorial recursion works', () => {
+     [
+       { number: 5, expectedResult: 120 },
+       { number: 0, expectedResult: 0 },
+       { number: 1, expectedResult: 1 },
+       { number: -1, expectedResult: 'Missing or negative number' },
+       { number: -5, expectedResult: 'Missing or negative number' },
+       { number: null, expectedResult: 'Missing or negative number' },
+       { number: undefined, expectedResult: 'Missing or negative number' }
+      ].forEach(
+         test => {
+           expect(factorial(test.number)).toBe(test.expectedResult)
+         }
+       )
+   })
 
  })

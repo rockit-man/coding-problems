@@ -1,6 +1,6 @@
  import { isAnagram, stringSplit, isAnagramWithSplit } from "./isAnagram";
  import { findMax } from './maxminNumber'
- import { bubbleSort } from './sort'
+ import { bubbleSort, swap } from './sort'
  import { factorial } from './recursion'
 
  describe('coding problem tests', () => {
@@ -36,6 +36,12 @@
     expect(bubbleSort([])).toStrictEqual([]);
     expect(bubbleSort(null)).toStrictEqual([]);
   })
+
+  test('whether swap works as expected', () => {
+    expect(swap(1,2)).toStrictEqual({ first: 2, second: 1 })
+  })
+  
+  
 
    test('whether factorial recursion works', () => {
      [

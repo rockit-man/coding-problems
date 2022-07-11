@@ -1,6 +1,6 @@
  import { isAnagram, stringSplit, isAnagramWithSplit } from "./isAnagram";
  import { findMax } from './maxminNumber'
- import { bubbleSort, swap } from './sort'
+ import { bubbleSort, swap, reverseString } from './sort'
  import { factorial } from './recursion'
 
  describe('coding problem tests', () => {
@@ -40,9 +40,18 @@
   test('whether swap works as expected', () => {
     expect(swap(1,2)).toStrictEqual({ first: 2, second: 1 })
   })
-  
-  
 
+   test('whether reverse string', () => {
+     [
+       { string: 'nikhil', expectedResult: 'lihkin' },
+       { string: 'formula1', expectedResult: '1alumrof' },
+       { string: '', expectedResult: '' },
+       { string: null, expectedResult: '' }].
+       forEach(test => {
+         expect(reverseString(test.string)).toBe(test.expectedResult)
+       })
+   })
+  
    test('whether factorial recursion works', () => {
      [
        { number: 5, expectedResult: 120 },

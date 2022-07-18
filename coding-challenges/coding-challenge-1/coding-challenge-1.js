@@ -12,7 +12,7 @@ function pluralizeWords(words) {
     add "'s" to word
   otherwise
     for each word in words,
-      add a "s'"
+      add a "s"
   return words
  }
  

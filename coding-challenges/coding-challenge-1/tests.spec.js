@@ -1,8 +1,10 @@
-// import { pluralizeWords } from "./coding-challenge-1";
+import { pluralizeWords } from "./coding-challenge-1";
 
-// describe('coding-challenge-1 tests', () => {
+describe('coding-challenge-1 tests', () => {
   
-//   test('is word in words Jereme', () => {
-//     expect(pluralizeWords([apples, oranges, Jereme]).toBeTruthy();
+  test('is word in words Jereme', () => {
+    expect(pluralizeWords(['apple', 'orange', 'Jereme'])).toBeTruthy();
+    expect(pluralizeWords(['apple', 'orange'])).toBeFalsy();
+  });
   
-// }
+})

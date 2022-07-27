@@ -19,3 +19,22 @@ function pluralizeWords(words) {
  }
  
  */
+
+function pluralizeWords(words) {
+  let arr = []
+  for (word of words) {
+    if (word.toLowerCase() == "jereme") {
+      word += "'s";
+      word = word[0].toUpperCase() + word.substring(1);
+      arr.push(word);
+    } else {
+      word += "s";
+      arr.push(word);
+    }
+  }
+  return arr
+}
+
+let arr = ["apple", "orange", "jereme"];
+
+console.log(pluralizeWords(arr));

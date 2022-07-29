@@ -9,16 +9,15 @@ describe('coding-challenge-1 tests', () => {
   });
 
   test('does word in words have any whitespace', () => {
-    expect(pluralizeWords(['apple', 'orange', 'Jereme']).indexOf(' ')).toBeFalsy;
-    expect(pluralizeWords(['appl e', 'oranges', 'Jereme']).indexOf(' ')).toBeTruthy;
+    expect(pluralizeWords(['apple', 'orange', 'Jereme'])).
+    expect(pluralizeWords(['appl e', 'oranges', 'Jereme'])).
+
+  test('does word in words have an s on the end already', () => {
+
   });
 
-  // test('does word in words have an s on the end already', () => {
-
-  // });
-
-  // test('does the name in words have white space', () => {
+  test('does the name in words have white space', () => {
   
-  // });
+  });
   
 });

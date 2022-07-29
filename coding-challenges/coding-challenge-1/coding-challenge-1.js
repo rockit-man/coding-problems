@@ -9,7 +9,7 @@ with unit tests. */
 /* Function should look something like this:
 
 function pluralizeWords(words) {
-  if word in words == Jereme (ignore case)
+  if word in words == Jereme (ignore case, ignore spaces)
     capitilize J
     add "'s" to word
   otherwise
@@ -33,7 +33,7 @@ export const pluralizeWords = (words) => {
       arr.push(word);
     }
   }
-  return arr
+  return arr;
 }
 
 // let arr = ["apple", "orange", "jereme"];

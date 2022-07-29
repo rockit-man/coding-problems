@@ -15,4 +15,4 @@ console.log(smolBirbs(birbArr));
 I was focusing on the lowercase string function because that was the
 line the error was catching on. You told me to look into looping through
 arrays again, so that's where I started. I didn't set up my for loop
-correctly. */
+correctly and I needed to update my arr[i] values. */

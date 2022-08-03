@@ -9,7 +9,7 @@ with unit tests. */
 /* Function should look something like this:
 
 function pluralizeWords(words) {
-  if word in words == Jereme (ignore case)
+  if word in words == Jereme (ignore case, ignore spaces)
     capitilize J
     add "'s" to word
   otherwise
@@ -20,9 +20,10 @@ function pluralizeWords(words) {
  
  */
 
-function pluralizeWords(words) {
-  let arr = []
-  for (word of words) {
+export const pluralizeWords = (words) => {
+  let arr = [];
+  console.log('This is the array being passed in: ' + words);
+  for (let word of words) {
     if (word.toLowerCase() == "jereme") {
       word += "'s";
       word = word[0].toUpperCase() + word.substring(1);
@@ -32,9 +33,9 @@ function pluralizeWords(words) {
       arr.push(word);
     }
   }
-  return arr
+  return arr;
 }
 
-let arr = ["apple", "orange", "jereme"];
+// let arr = ["apple", "orange", "jereme"];
 
-console.log(pluralizeWords(arr));
+// console.log(pluralizeWords(arr));

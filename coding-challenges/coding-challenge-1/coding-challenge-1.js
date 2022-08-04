@@ -22,12 +22,13 @@ function pluralizeWords(words) {
 
 export const pluralizeWords = (words) => {
   let arr = [];
+  let lastLetter = word.length - 1;
   for (let word of words) {
     if (word.toLowerCase() == "jereme") {
       word += "'s";
       word = word[0].toUpperCase() + word.substring(1);
       arr.push(word);
-    } else if (indexof(word.length - 1) == "s") {
+    } else if (lastLetter == "s") {
       break;
     } else {
       word += "s";

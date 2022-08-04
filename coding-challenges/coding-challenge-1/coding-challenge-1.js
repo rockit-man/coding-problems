@@ -27,6 +27,8 @@ export const pluralizeWords = (words) => {
       word += "'s";
       word = word[0].toUpperCase() + word.substring(1);
       arr.push(word);
+    } else if (indexof(word.length - 1) == "s") {
+      break;
     } else {
       word += "s";
       arr.push(word);

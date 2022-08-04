@@ -22,8 +22,8 @@ function pluralizeWords(words) {
 
 export const pluralizeWords = (words) => {
   let arr = [];
-  let lastLetter = word.length - 1;
   for (let word of words) {
+      let lastLetter = word.length - 1;
     if (word.toLowerCase() == "jereme") {
       word += "'s";
       word = word[0].toUpperCase() + word.substring(1);

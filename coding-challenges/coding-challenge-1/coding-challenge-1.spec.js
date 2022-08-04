@@ -10,7 +10,7 @@ test('is word in words Jereme', () => {
 
   test('does word in words have any whitespace', () => {
     expect(pluralizeWords(['apple', 'orange', 'Jereme'])).toStrictEqual(['apples', 'oranges', "Jereme's"]);
-    expect(pluralizeWords(['white grape', 'oranges', 'Jereme'])).toStrictEqual(['white grapes', 'oranges', "Jereme's"]);
+    expect(pluralizeWords(['white grape', 'orange', 'Jereme'])).toStrictEqual(['white grapes', 'oranges', "Jereme's"]);
   });
 
   test('does word in words have an s on the end already', () => {

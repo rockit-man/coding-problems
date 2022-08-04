@@ -33,5 +33,5 @@ export const pluralizeWords = (words) => {
       arr.push(word);
     }
   }
-  return arr
+  return arr;
 }

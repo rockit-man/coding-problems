@@ -22,7 +22,6 @@ function pluralizeWords(words) {
 
 export const pluralizeWords = (words) => {
   let arr = [];
-  console.log('This is the array being passed in: ' + words);
   for (let word of words) {
     if (word.toLowerCase() == "jereme") {
       word += "'s";
@@ -35,7 +34,3 @@ export const pluralizeWords = (words) => {
   }
   return arr;
 }
-
-// let arr = ["apple", "orange", "jereme"];
-
-// console.log(pluralizeWords(arr));

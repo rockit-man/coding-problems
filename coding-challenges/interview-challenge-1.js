@@ -1,8 +1,15 @@
+/* Write a function that takes in an array containing capitalized
+bird names and return an array with those names in all lowercase
+letters */
+
 let birbArr = ['Northern Cardinal', 'Gray Catbird', 'Carolina Wren'];
 
 // using a for loop
-const smolBirbs = (arr) => {
+export const smolBirbs = (arr) => {
     let smolArr = [];
+    if (!arr) {
+        return 'Sorry. No birb array being passed in. Try again.'
+        }
     for (let i = 0; i < arr.length; i++) {
         arr[i] = arr[i].toLowerCase();
         smolArr.push(arr[i]);
@@ -17,6 +24,6 @@ arrays again, so that's where I started. I didn't set up my for loop
 correctly and I needed to update my arr[i] values. */
 
 //using arrow functions and the Array.map method
-const smolBirbs = (arr) => {
-    return arr.map(b => b.toLowerCase());
-};
+// const smolBirbs = (arr) => {
+//     return arr.map(b => b.toLowerCase());
+// };

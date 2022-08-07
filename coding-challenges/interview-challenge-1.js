@@ -9,13 +9,13 @@ export const smolBirbs = (arr) => {
     let smolArr = [];
     if (!arr) {
         return 'Sorry. No birb array being passed in. Try again.'
-        }
+    }
     for (let i = 0; i < arr.length; i++) {
         arr[i] = arr[i].toLowerCase();
         smolArr.push(arr[i]);
     }
     return smolArr;
-};
+}
 
 /* Took me almost 15 additional minutes, but I finally figured it out.
 I was focusing on the lowercase string function because that was the

@@ -1,13 +1,13 @@
 import { pluralizeWords } from "./coding-challenge-1";
-import { smolBirbs } from './coding-challenges/interview-challenge-1';
-import { reverseStr } from './coding-challenges/interview-challenge-2';
+import { smolBirbs } from './interview-challenge-1';
+import { reverseStr } from './interview-challenge-2';
 
 describe('coding-challenge-1 tests', () => {
   
   test('is word in words Jereme', () => {
     expect(pluralizeWords(['apple', 'orange', 'Jereme'])).toStrictEqual(['apples', 'oranges', "Jereme's"]);
     expect(pluralizeWords(['apple', 'orange', 'jereme'])).toStrictEqual(['apples', 'oranges', "Jereme's"]);
-    expect(pluralizeWords(['apple', 'orange', 'Nikhil'])).toStrictEqual(['apples', 'oranges', 'Nikhils']);
+    expect(pluralizeWords(['apple', 'orange', 'Nikhil'])).toStrictEqual(['apples', 'oranges', 'Nikhil']);
   });
 
   test('does word in words have any whitespace', () => {
@@ -40,7 +40,7 @@ describe('coding-challenge-1 tests', () => {
       { string: 'formula1', expectedResult: '1alumrof' },
       { string: '', expectedResult: '' },
       { string: null, expectedResult: '' }].
-      
+
       forEach(test => {
         expect(reverseStr(test.string)).toBe(test.expectedResult)
       })

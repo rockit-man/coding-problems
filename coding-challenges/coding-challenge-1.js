@@ -34,7 +34,4 @@ export const pluralizeWords = (words) => {
     }
   }
   return arr;
-<<<<<<< HEAD:coding-challenges/coding-challenge-1.js
 }
-=======
->>>>>>> master:coding-challenges/coding-challenge-1/coding-challenge-1.js

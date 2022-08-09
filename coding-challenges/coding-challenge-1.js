@@ -1,4 +1,3 @@
-
 /* Create a function that takes in an array of words 
 as the parameter and pluralizes those words. In the array 
 of words will also be your first name. The function should 
@@ -35,4 +34,7 @@ export const pluralizeWords = (words) => {
     }
   }
   return arr;
+<<<<<<< HEAD:coding-challenges/coding-challenge-1.js
 }
+=======
+>>>>>>> master:coding-challenges/coding-challenge-1/coding-challenge-1.js

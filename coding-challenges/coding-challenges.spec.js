@@ -4,7 +4,7 @@ import { reverseStr } from './interview-challenge-2';
 
 describe('coding-challenge-1 tests', () => {
   
-  test('is word in words Jereme', () => {
+test('is word in words Jereme', () => {
     expect(pluralizeWords(['apple', 'orange', 'Jereme'])).toStrictEqual(['apples', 'oranges', "Jereme's"]);
     expect(pluralizeWords(['apple', 'orange', 'jereme'])).toStrictEqual(['apples', 'oranges', "Jereme's"]);
     expect(pluralizeWords(['apple', 'orange', 'Nikhil'])).toStrictEqual(['apples', 'oranges', 'Nikhil']);
@@ -12,7 +12,7 @@ describe('coding-challenge-1 tests', () => {
 
   test('does word in words have any whitespace', () => {
     expect(pluralizeWords(['apple', 'orange', 'Jereme'])).toStrictEqual(['apples', 'oranges', "Jereme's"]);
-    expect(pluralizeWords(['white grape', 'oranges', 'Jereme'])).toStrictEqual(['white grapes', 'oranges', "Jereme's"]);
+    expect(pluralizeWords(['white grape', 'orange', 'Jereme'])).toStrictEqual(['white grapes', 'oranges', "Jereme's"]);
   });
 
   test('does word in words have an s on the end already', () => {
@@ -20,7 +20,7 @@ describe('coding-challenge-1 tests', () => {
   });
 
   test('does the name in words have white space', () => {
-    expect(pluralizeWords(['apple', 'oranges', 'Metta Sandiford-Artest'])).toStrictEqual(['apples', 'oranges', "Metta Sandiford-Artest"]);
+    expect(pluralizeWords(['apple', 'oranges', 'Jereme', 'Metta Sandiford-Artest'])).toStrictEqual(['apples', 'oranges', "Jereme's", 'Metta Sandiford-Artest']);
   });
   
   test('whether words return all lowercase', () => {

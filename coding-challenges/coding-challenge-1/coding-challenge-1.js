@@ -1,4 +1,3 @@
-
 /* Create a function that takes in an array of words 
 as the parameter and pluralizes those words. In the array 
 of words will also be your first name. The function should 
@@ -27,10 +26,11 @@ export const pluralizeWords = (words) => {
       word += "'s";
       word = word[0].toUpperCase() + word.substring(1);
       arr.push(word);
+    } else if (word.indexOf('s') == word.length - 1 || word[0] == word[0].toUpperCase()) {
+      arr.push(word);
     } else {
       word += "s";
       arr.push(word);
     }
   }
   return arr;
-}

@@ -34,3 +34,4 @@ export const pluralizeWords = (words) => {
     }
   }
   return arr;
+}

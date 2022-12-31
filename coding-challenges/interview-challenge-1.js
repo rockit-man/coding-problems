@@ -2,8 +2,6 @@
 bird names and return an array with those names in all lowercase
 letters */
 
-let birbArr = ['Northern Cardinal', 'Gray Catbird', 'Carolina Wren'];
-
 // using a for loop
 export const smolBirbs = (arr) => {
     let smolArr = [];

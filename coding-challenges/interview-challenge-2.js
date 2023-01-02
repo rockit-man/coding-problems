@@ -13,3 +13,13 @@ export const reverseStr = (str) => {
     }
     return reverseStr;
 }
+
+// alternate solution
+
+// export const reverseStr = (str) => {
+//     if (!str) {
+//         return '';
+//     } else {
+//         return str.split("").reverse().join("");
+//     }
+// }
